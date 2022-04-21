@@ -4,7 +4,7 @@ let quote = $(".quote");
 let btn = $(".generate-button");
 let cn;
 let apiKey = "WACA7lBQq6LW77SQVYu9l5HgpVC8iPjVVXsZSxd3";
-fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`)
+fetch(`https://api.chucknorris.io/jokes/random`)
   .then(function (response) {
     console.log("Success! ", response);
     return response.json();
