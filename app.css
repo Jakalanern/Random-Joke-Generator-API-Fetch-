@@ -1,0 +1,93 @@
+:root {
+  --clr-black: rgba(0, 0, 0, 0.815);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(247, 247, 247);
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  width: 100%;
+  height: 100%;
+  padding: 4em;
+  background: rgb(241, 241, 241);
+}
+
+.header {
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5em;
+  font-weight: 400;
+}
+
+.quote-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+  width: 1000px;
+  height: 250px;
+}
+
+.quote {
+  z-index: 2;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  font-weight: 400;
+  font-size: 2.5em;
+}
+
+.generate-button {
+  z-index: 99;
+  position: absolute;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translateY(15em);
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1em;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.generate-button:hover {
+  background: rgb(0, 0, 0);
+  color: white;
+}
+
+.loading {
+  position: absolute;
+  width: 300px;
+  border: none;
+  transform: translateY(-4em);
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
